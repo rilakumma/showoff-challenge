@@ -77,9 +77,17 @@ class App extends Component {
           </div>
         </div>
         <div className="middle-panel">
-          <p>Here at YummyHome we help you find your yummiest home. Check out our listings, find your dream home, then we'll tell you the best
-          food surrounding your new home.</p>
-        <button>Get started</button>
+          <p className="middle-text">
+            Here at <span>YummyHome</span> we help you find your yummiest home. Check out our listings, find your dream home, then we'll tell you the
+            best food surrounding your new home.
+          </p>
+          <div className='icons'>
+          <i class="fas fa-utensils"></i>
+          <i class="fas fa-home"></i>
+          </div>
+          <button>Get started</button>
+
+
         </div>
         <div className="search-homes">
           <input onChange={e => this.setState({ search: e.target.value })} />
