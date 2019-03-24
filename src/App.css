@@ -1,33 +1,70 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: "Maitree", serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  font-size: 24px;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background: rgb(187, 211, 219);
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.first-panel {
+  background-image: url("./houses.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: cover;
+  height: 25em;
+  width: 100%;
+  position: relative;
+}
+.panel-text {
+  position: relative;
+}
+.middle-panel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 10em;
+}
+
+
+.food-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+}
+.yelp-response {
+  width: 15em;
+  height: 8em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: lightcoral;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button {
+  font-size: 20px;
+  font-weight: bold;
+  height: 3em;
+  width: 10em;
+  background: none;
+  border: solid black;
+  outline: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background: rgba(240, 128, 128, 0.5);
+  cursor: pointer;
+  border: 0.2em solid rgb(48, 47, 47);
 }
