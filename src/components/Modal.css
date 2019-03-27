@@ -1,0 +1,101 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  font-size: 20px;
+  width: fit-content;
+  max-width: 1200px;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px 30px;
+  position: relative;
+}
+.modal-image {
+  max-width: 550px;
+}
+
+.close {
+  font-size: 1.3em;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.close:hover {
+  cursor: pointer;
+  color: lightcoral;
+}
+.place {
+  max-width: 240px;
+  width: fit-content;
+  display: grid;
+  grid-row-gap: 4px;
+}
+.place-name {
+  height: fit-content;
+  max-width: 200px;
+  width: fit-content;
+  padding: 7px;
+  background: lightcoral;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+.cats {
+  font-style: italic;
+  font-size: 0.8em;
+}
+.address {
+  margin-top: 5px;
+  font-size: 32px;
+  line-height: 32px;
+}
+.price {
+  margin-top: 5px;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.filtered-list {
+  min-height: 420px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 5px;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+.cat-btns {
+  font-size: 20px;
+  background: gray;
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+}
+.cat-btns:hover {
+  cursor: pointer;
+  background: lightcoral;
+  color: white;
+}
+.cat-btns:focus {
+  background: lightcoral;
+  color: white;
+}
