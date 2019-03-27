@@ -90,8 +90,7 @@ export default class Modal extends Component {
             <span onClick={() => this.props.toggle("")} className="close">
               &#x2715;
             </span>
-            <h1>The Top 5 Restaurants Nearby:</h1>
-            <div className="filtered-list">{filteredList}</div>
+            <h1>Top Restaurants Nearby:</h1>
             <div className="btns">
               <button onClick={() => this.getFood(this.state.current, "bars")} className="cat-btns">
                 Bars
@@ -112,6 +111,7 @@ export default class Modal extends Component {
                 Japanese
               </button>
             </div>
+            <div className="filtered-list">{filteredList}</div>
           </div>
         </div>
       </div>

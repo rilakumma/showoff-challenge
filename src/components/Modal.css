@@ -13,13 +13,15 @@
   font-size: 20px;
   width: fit-content;
   max-width: 1200px;
-  height: 70%;
+  height: fit-content;
+  max-height: 70%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 40px 20px;
   background: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: none;
   grid-gap: 0px 30px;
   position: relative;
 }
@@ -39,6 +41,7 @@
 }
 .place {
   max-width: 240px;
+  max-height: 145px;
   width: fit-content;
   display: grid;
   grid-row-gap: 4px;
@@ -75,18 +78,21 @@
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px 5px;
+  grid-gap: 18px 5px;
 }
 .btns {
+  width: 93%;
+  margin: 10px 0px;
+
   display: flex;
   justify-content: space-between;
 }
 .cat-btns {
-  font-size: 20px;
+  font-size: 18px;
   background: gray;
   outline: none;
   border: none;
-  padding: 10px;
+  padding: 5px 10px;
   color: white;
   border-radius: 20px;
 }
@@ -98,4 +104,40 @@
 .cat-btns:focus {
   background: lightcoral;
   color: white;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1030px) {
+  .modal-content {
+    font-size: 18px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+    justify-content: center;
+    width: 80%;
+    height: 75%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .filtered-list {
+    min-height: fit-content;
+  }
+  .modal-content {
+    overflow: scroll;
+    font-size: 15px;
+  }
+  .modal-image {
+    max-width: 250px;
+  }
+  .address {
+    line-height: 15px;
+    font-size: 15px;
+  }
+  .price {
+    font-size: 15px;
+  }
+  .cat-btns {
+    font-size: 10px;
+  }
 }

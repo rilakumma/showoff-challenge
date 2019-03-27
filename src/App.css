@@ -1,5 +1,6 @@
 .App {
   height: 100%;
+  width: 100%;
   background: rgb(240, 240, 240);
   font-family: "Maitree", serif;
   display: flex;
@@ -95,6 +96,7 @@
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-rows: none;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -128,4 +130,46 @@
 }
 span {
   font-weight: bold;
+}
+
+@media screen and (max-width: 1030px) {
+  .listing {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .panel-text {
+    font-size: 30px;
+    width: 50%;
+  }
+  .middle-text {
+    width: 90%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .listing-photo {
+    width: 80%;
+  }
+  .listing {
+    height: 200px;
+    width: 55%;
+    font-size: 15px;
+    grid-template-columns: none;
+    grid-column-start: 1;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.2fr;
+  }
+  .search-homes {
+    max-height: 3000px;
+  }
+  .get-started {
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+  .search-bar {
+    width: 90%;
+    font-size: 15px;
+  }
 }

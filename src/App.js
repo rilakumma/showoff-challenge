@@ -79,7 +79,7 @@ class App extends Component {
           <input
             onChange={e => this.setState({ search: e.target.value })}
             className="search-bar"
-            placeholder="Enter zipcode Ex. 85018, 85016, 85251"
+            placeholder="Scroll through our listings or enter a zipcode here (Ex. 85018, 85016, 85251)"
           />
           {this.state.open && <Modal home={this.state.selectedHome} toggle={this.toggleModal} />}
           {filterListings}
